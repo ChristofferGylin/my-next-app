@@ -5,7 +5,7 @@ const About = () => {
 
     const getHello = async () => {
 
-        const response = await fetch('http://localhost:3000/api/hello');
+        const response = await fetch(process.env.DB_HOST);
 
         if (response.ok) {
 
